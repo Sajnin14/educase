@@ -17,7 +17,7 @@ const Page2 = () => {
                 </div>
 
                 <div className="my-4 relative">
-                    <label className="absolute -top-2.5 left-3 text-sm font-semibold text-purple-700 pl-1 pr-4 bg-[#F7F8F9]">Password</label>
+                    <label className="absolute -top-2.5 left-3 text-sm font-semibold text-purple-700 pl-1 pr-6 bg-[#F7F8F9]">Password</label>
                     <input
 
                         placeholder="Enter password"

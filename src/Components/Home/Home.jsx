@@ -34,9 +34,9 @@ const Home = () => {
             </div>
             <div className='text-gray-400 flex items-center justify-center gap-3 mt-7 py-3 sticky bottom-0 bg-white z-50'>
                 <Link to='/'><MdHome className='text-3xl'></MdHome></Link>
-                <div className='flex items-center justify-around'>
+                <div className='flex items-center justify-around gap-4'>
                     <button onClick={previous}><FaChevronLeft  className='text-xl font-thin'/></button>
-                    <p>{pageCount} of 4</p>
+                    <p className='text-xs'>{pageCount} of 4</p>
                     <button onClick={next}><FaChevronRight className='text-xl font-thin'/></button>
                 </div>
             </div>

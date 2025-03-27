@@ -3,7 +3,7 @@ import React from 'react';
 const Page2 = () => {
     return (
         <div className='flex justify-center'>
-            <div className="artboard phone-4 bg-[#F7F8F9] px-5 py-10">
+            <div className="artboard phone-4 bg-[#F7F8F9] border border-[#CBCBCB] px-5 py-10">
                 <h3 className='text-[#1D2226] text-2xl tracking-wider mb-[14px] font-medium'>Signin to your <br /> PopX account</h3>
                 <p className='text-[#1D2226] opacity-60'>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit,</p>
 

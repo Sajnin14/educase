@@ -27,13 +27,17 @@ const Home = () => {
     const next = () => {
        setPageCount(pageCount === 4 ? 1 : pageCount+1)
     }
+
+    const handleHome = () =>{
+        setPageCount(1);
+    }
     return (
         <div className='w-11/12 mx-auto'>
             <div>
                 {changePage()}
             </div>
             <div className='text-gray-400 flex items-center justify-center gap-3 mt-7 py-3 sticky bottom-0 bg-white z-50'>
-                <Link to='/'><MdHome className='text-3xl'></MdHome></Link>
+                <button onClick={handleHome}><MdHome className='text-3xl'></MdHome></button>
                 <div className='flex items-center justify-around gap-4'>
                     <button onClick={previous}><FaChevronLeft  className='text-xl font-thin'/></button>
                     <p className='text-xs'>{pageCount} of 4</p>

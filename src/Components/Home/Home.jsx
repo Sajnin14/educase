@@ -9,8 +9,7 @@ import Page4 from '../Pages/Page4';
 
 const Home = () => {
     const [pageCount, setPageCount] = useState(1);
-    // const totalPage = 4;
-
+    
     const changePage = () => {
          switch(pageCount) {
             case 1: return <Page1></Page1>;
@@ -33,12 +32,12 @@ const Home = () => {
             <div>
                 {changePage()}
             </div>
-            <div className='text-gray-300 flex items-center justify-center gap-3 mt-4'>
+            <div className='text-gray-400 flex items-center justify-center gap-3 mt-7 py-3 sticky bottom-0 bg-white z-50'>
                 <Link to='/'><MdHome className='text-3xl'></MdHome></Link>
                 <div className='flex items-center justify-around'>
-                    <button onClick={previous}><FaChevronLeft  className='text-2xl'/></button>
-                    <p>{pageCount} out of 4</p>
-                    <button onClick={next}><FaChevronRight className='text-2xl'/></button>
+                    <button onClick={previous}><FaChevronLeft  className='text-xl font-thin'/></button>
+                    <p>{pageCount} of 4</p>
+                    <button onClick={next}><FaChevronRight className='text-xl font-thin'/></button>
                 </div>
             </div>
         </div>

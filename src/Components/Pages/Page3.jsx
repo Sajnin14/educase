@@ -2,8 +2,8 @@ import React from 'react';
 
 const Page3 = () => {
     return (
-        <div>
-            <h3>Page 3</h3>
+        <div className='flex justify-center'>
+            <div className="artboard phone-4 bg-[#F7F8F9]">375×812</div>
         </div>
     );
 };
